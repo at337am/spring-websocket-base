@@ -2,6 +2,14 @@
 
 This project is a real-time chat system based on Spring Boot, WebSocket, and MongoDB, for learning reference only.
 
+view1:
+
+![](./demo/view1.jpg)
+
+view2:
+
+![](./demo/view2.jpg)
+
 ### Required Software Versions
 
 1. **Java Development Kit (JDK)**: Version 21
