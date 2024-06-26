@@ -1,0 +1,16 @@
+server:
+  port: 80
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 16MB
+      max-request-size: 160MB
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: webSocket_base
+      username: root
+      password: root
+      authentication-database: admin

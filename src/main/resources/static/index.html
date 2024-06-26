@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <title>404</title>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/header-hamster.css"/>
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+<noscript>
+    <h2>Sorry! Your browser does not support JavaScript</h2>
+</noscript>
+
+<main id="join-page">
+    <section class="join-container">
+        <h2>Type your username</h2>
+        <form id="joinFrom" name="joinFrom">
+            <div class="join-input-group">
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Username" autocomplete="off"/>
+                <button type="submit" class="accent username-submit">Join in</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<main id="chat-page" class="hidden">
+    <section class="chat-container">
+        <header class="chat-header">
+            <h2>Spring WebSocket Base - By at337am</h2>
+            <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+                <div class="wheel"></div>
+                <div class="hamster">
+                    <div class="hamster__body">
+                        <div class="hamster__head">
+                            <div class="hamster__ear"></div>
+                            <div class="hamster__eye"></div>
+                            <div class="hamster__nose"></div>
+                        </div>
+                        <div class="hamster__limb hamster__limb--fr"></div>
+                        <div class="hamster__limb hamster__limb--fl"></div>
+                        <div class="hamster__limb hamster__limb--br"></div>
+                        <div class="hamster__limb hamster__limb--bl"></div>
+                        <div class="hamster__tail"></div>
+                    </div>
+                </div>
+                <div class="spoke"></div>
+            </div>
+        </header>
+        <div class="connecting">Connecting...</div>
+        <ul id="messageArea"></ul>
+    </section>
+
+    <section class="chat-input">
+        <form id="file-upload-form">
+            <button type="button" id="upload-button">File</button>
+            <input type="file" id="file-input" style="display: none"/>
+        </form>
+        <form id="messageForm" name="messageForm">
+            <div class="input-group clearfix">
+                <label for="message"></label>
+                <input type="text" id="message" placeholder="Type a message..." autocomplete="off"/>
+                <button type="submit" class="primary">Send</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<div id="promptMessage">Prompt message</div>
+
+<script src="/js/sockjs.min.js"></script>
+<script src="/js/stomp.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
